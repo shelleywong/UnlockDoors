@@ -35,7 +35,11 @@
        * doors so they don't say they're open.
       **/
       function reset(){
+        document.getElementById("leftDoorStatus").innerHTML = "";
+        document.getElementById("rightDoorStatus").innerHTML = "";
         document.getElementById("rightDoor").setAttribute("disabled", "");
+        document.getElementById("resetDoors").setAttribute("disabled", "");
+        window.alert("Everything reset!");
       }
     </script>
   </head>
